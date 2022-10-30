@@ -1,0 +1,14 @@
+body{
+}
+#container{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+}
+.square{
+    border: 1px solid black;
+    width: 16px;
+    height: 16px;
+}
