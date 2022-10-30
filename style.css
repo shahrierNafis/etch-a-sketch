@@ -1,5 +1,6 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -7,16 +8,18 @@ body {
 #container {
     display: flex;
     flex-direction: column;
+    height: 960px;
+    width: 960px;
 }
 
 .row {
     display: flex;
+    flex: 1 1 auto;
 }
 
 .square {
     border: 1px solid black;
-    width: 24px;
-    height: 24px;
+    flex: 1 1 auto;
 }
 
 .touched {
