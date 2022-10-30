@@ -1,14 +1,24 @@
-body{
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#container{
+
+#container {
     display: flex;
     flex-direction: column;
 }
-.row{
+
+.row {
     display: flex;
 }
-.square{
+
+.square {
     border: 1px solid black;
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
+}
+
+.touched {
+    background-color: black;
 }
