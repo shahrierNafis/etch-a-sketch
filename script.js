@@ -1,4 +1,14 @@
+var mouseDownCount = 0;
+
+document.onmousedown = function (evt) {
+  ++mouseDownCount;
+};
+document.onmouseup = function (evt) {
+  --mouseDownCount;
+};
+
 function reset(x) {
+  mouseDownCount = 0;
   document.body.innerHTML = "";
   let i = x;
   let container = document.createElement("div");
@@ -26,14 +36,6 @@ function reset(x) {
   document.body.appendChild(container);
   console.log(x);
 }
-var mouseDownCount = 0;
-
-document.onmousedown = function (evt) {
-  ++mouseDownCount;
-};
-document.onmouseup = function (evt) {
-  --mouseDownCount;
-};
 function changeColor() {
   if (mouseDownCount) {
     this.classList.add("touched");
